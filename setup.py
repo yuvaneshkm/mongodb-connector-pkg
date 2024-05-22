@@ -7,7 +7,7 @@ warnings.filterwarnings('ignore')
 # ======================> SETUP <============================
 
 # basic info:
-PKG_NAME = 'mongodbconnect'
+PACKAGE_NAME = 'mongodbconnect'
 __version__ = '0.0.1'
 AUTHOR_USER_NAME = 'yuvaneshkm'
 AUTHOR_EMAIL = 'yuvaneshkm05@gmail.com'
@@ -33,7 +33,7 @@ def get_requirements(requirements_file_path:str):
 
 # setup:
 setup(
-    name = PKG_NAME,
+    name = PACKAGE_NAME,
     version = __version__,
     author = AUTHOR_USER_NAME,
     author_email = AUTHOR_EMAIL,
