@@ -12,6 +12,7 @@ __version__ = '0.0.1'
 AUTHOR_USER_NAME_ = 'yuvaneshkm'
 AUTHOR_EMAIL_ = 'yuvaneshkm05@gmail.com'
 REPO_NAME_ = 'mongodb-connector-pkg'
+LICENSE_ = 'MIT'
 
 # long description (reading the README.md file):
 with open('README.md', 'r', encoding='utf-8') as f:
@@ -37,6 +38,7 @@ setup(
     version = __version__,
     author = AUTHOR_USER_NAME_,
     author_email = AUTHOR_EMAIL_,
+    license = LICENSE_,
     description = 'Python Package for connecting MongoDB Database',
     long_description =  LONG_DESCRIPTION_,
     long_description_content_type = 'text/markdown',
@@ -48,3 +50,4 @@ setup(
     packages = find_packages(where='src'),
     install_requires = get_requirements('requirements_dev.txt')
 )
+
