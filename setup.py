@@ -1,5 +1,6 @@
 # ====================> importing necessary packages <========================
 from setuptools import setup, find_packages
+from typing import List
 import warnings
 warnings.filterwarnings('ignore')
 
@@ -20,7 +21,7 @@ with open('README.md', 'r', encoding='utf-8') as f:
 f.close()
 
 # requirements:
-def get_requirements(requirements_file_path:str):
+def get_requirements(requirements_file_path:str) -> List[str]:
 
     with open(requirements_file_path, 'r') as f:
         require = f.read()
