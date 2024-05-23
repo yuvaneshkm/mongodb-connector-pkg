@@ -12,6 +12,7 @@ list_of_files = [
 
     # creating a yaml file:
     '.github/workflows/ci.yaml',
+    '.github/workflows/python-publish.yaml',
 
 
     # creating src folder:
