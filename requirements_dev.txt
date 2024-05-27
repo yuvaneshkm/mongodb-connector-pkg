@@ -5,7 +5,7 @@ pandas
 numpy
 ensure
 pytest
-tox==3.25.1
+tox
 black
 flake8
 mypy
