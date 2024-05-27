@@ -5,8 +5,7 @@ pandas
 numpy
 ensure
 pytest
-tox
-tox.config.cli
+tox==3.25.1
 black
 flake8
 mypy
