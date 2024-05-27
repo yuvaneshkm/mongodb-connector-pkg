@@ -1,4 +1,5 @@
 # importing necessary libraries:
+from pathlib import Path
 import pandas as pd
 from pymongo.mongo_client import MongoClient
 import json
@@ -32,7 +33,8 @@ class MongoDBConnection:
 
     # insert bulk record:
     def bulk_insert(self, file_path:str):
-
+        file_path = Path(file_path)
+        
         if file_path.split('.')[-1]=='json':
             with open(file_path, 'r') as file:
                 json_file_data = json.load(file)
