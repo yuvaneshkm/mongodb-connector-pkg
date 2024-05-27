@@ -26,10 +26,10 @@ list_of_files = [
     'tests/__init__.py',
     # tests ----- unit:
     'tests/unit/__init__.py',
-    'tests/unit/unit.py',
+    'tests/unit/test_unit.py',
     # tests ----- integration:
     'tests/integration/__init__.py',
-    'tests/integration/integration.py',
+    'tests/integration/test_integration.py',
 
 
     # setup files:
