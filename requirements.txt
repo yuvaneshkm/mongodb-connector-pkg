@@ -1,5 +1,4 @@
 pymongo
-pymongo[srv]
 dnspython
 pandas
 numpy
