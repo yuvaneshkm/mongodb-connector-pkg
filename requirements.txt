@@ -4,5 +4,5 @@ dnspython
 pandas
 numpy
 ensure
-pytest==7.1.3
+pytest
 -e .
