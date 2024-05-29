@@ -5,7 +5,7 @@ import warnings
 warnings.filterwarnings('ignore')
 
 # package name:
-package_name = 'mongodb_connect'
+package_name = 'database_automation'
 
 # creating a list of files and folders required for this project:
 list_of_files = [
