@@ -6,9 +6,9 @@ with open('README.md', 'r', encoding='utf-8') as f:
 f.close()   
    
 
-__version__ = "0.0.2"
+__version__ = "0.0.3"
 REPO_NAME = "mongodb-connector-pkg"
-PKG_NAME= "mongodbconnector"
+PKG_NAME= "mdb_connect_pkg_0.0.3"
 AUTHOR_USER_NAME = "yuvaneshkm"
 AUTHOR_EMAIL = "yuvaneshkm27@gmail.com"
 
