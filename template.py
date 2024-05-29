@@ -5,7 +5,7 @@ import warnings
 warnings.filterwarnings('ignore')
 
 # package name:
-package_name = 'mdb_connect_pkg_0.0.3'
+package_name = 'mdb_connect_pkg'
 
 # creating a list of files and folders required for this project:
 list_of_files = [

@@ -8,7 +8,7 @@ f.close()
 
 __version__ = "0.0.3"
 REPO_NAME = "mongodb-connector-pkg"
-PKG_NAME= "mdb_connect_pkg_0.0.3"
+PKG_NAME= "mdb_connect_pkg"
 AUTHOR_USER_NAME = "yuvaneshkm"
 AUTHOR_EMAIL = "yuvaneshkm27@gmail.com"
 
