@@ -16,7 +16,7 @@ mongodb-connector-pkg/
 │       └── ci.yaml
 │       └── python-publish.yaml
 ├── src/
-│   └── mdb_connect_pkg/
+│   └── mdb-connect-pkg/
 │       └── mongo_crud.py
 ├── tests/
 │   ├── unit/
@@ -41,7 +41,7 @@ mongodb-connector-pkg/
 ## Installation
 To install the package, use pip:
 ```
-pip install mdb_connect_pkg
+pip install mdb-connect-pkg==0.0.4
 ```
 
 ## Usage

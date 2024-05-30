@@ -7,7 +7,7 @@ warnings.filterwarnings('ignore')
 # ==================================== Setup ===============================================
 
 # basic info:
-PKG_NAME= "mdb_connect_pkg"
+PKG_NAME= "mdb-connect-pkg"
 __version__ = "0.0.4"
 AUTHOR_USER_NAME = "yuvaneshkm"
 REPO_NAME = "mongodb-connector-pkg"
