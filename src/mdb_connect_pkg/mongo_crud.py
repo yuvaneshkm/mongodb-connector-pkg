@@ -3,6 +3,8 @@ from pathlib import Path
 import pandas as pd
 from pymongo.mongo_client import MongoClient
 import json
+import warnings
+warnings.filterwarnings('ignore')
 
 
 # creatring a class for mongodb connection:
@@ -54,4 +56,24 @@ class MongoDBConnection:
         collection = self.collection_()
         data = collection.find()
         df = pd.DataFrame(list(data))
+        df.drop('_id', axis=1, inplace=True)
         return df
+
+    # updating the data:
+    def update_data(self, *query):
+        collection = self.collection_()
+        collection.update_many(*query)
+
+    # delete the data:
+    def delete_record(self, *query):
+        collection = self.collection_()
+        collection.delete_many(*query)
+
+    # drop the entire collection:
+    def drop_collection(self):
+        collection = self.collection_()
+        collection.drop()
+
+    # drop the entire database:
+    def drop_database(self):
+        self.client.drop_database(self.database_name)

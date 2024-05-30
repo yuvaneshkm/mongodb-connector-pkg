@@ -1,17 +1,37 @@
+# ============================ Importing necessary packages ==============================
 from setuptools import setup, find_packages
 from typing import List
+import warnings
+warnings.filterwarnings('ignore')
 
-with open('README.md', 'r', encoding='utf-8') as f:
-    long_description = f.read()  
-f.close()   
-   
+# ==================================== Setup ===============================================
 
-__version__ = "0.0.3"
-REPO_NAME = "mongodb-connector-pkg"
+# basic info:
 PKG_NAME= "mdb_connect_pkg"
+__version__ = "0.0.4"
 AUTHOR_USER_NAME = "yuvaneshkm"
+REPO_NAME = "mongodb-connector-pkg"
 AUTHOR_EMAIL = "yuvaneshkm27@gmail.com"
 
+# long description (reading the README.md file):
+with open('README.md', 'r', encoding='utf-8') as f:
+    long_description = f.read()  
+f.close()
+
+# requirements:
+def get_requirements(requirements_file_path: str) -> List[str]:
+
+    with open(requirements_file_path, 'r') as f:
+        require = f.read()
+        requirements = require.split('\n')
+        # remove -e .
+        if '-e .' in requirements:
+            requirements.remove('-e .')
+    f.close()
+
+    return requirements
+   
+# setup:
 setup(
     name=PKG_NAME,
     version=__version__,
@@ -26,4 +46,5 @@ setup(
     },
     package_dir={"": "src"},
     packages=find_packages(where="src"),
+    install_requires = get_requirements('requirements_dev.txt')
     )
