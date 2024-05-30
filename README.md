@@ -1,14 +1,14 @@
 # MongoDB connector package
 
-## Overview
+# Overview
 **mdb_connect_pkg** is a Python package designed to simplify the process of connecting to and interacting with MongoDB databases. This package provides a streamlined API for performing CRUD (Create, Read, Update, Delete) operations, handling connections, and managing MongoDB collections with ease.
 
-## Features
+# Features
 * Easy connection management to MongoDB instances
 * Simple CRUD operations
 * Handling of MongoDB collections
 
-## Directory Structure
+# Directory Structure
 ```
 mongodb-connector-pkg/
 ├── .github/
@@ -35,6 +35,8 @@ mongodb-connector-pkg/
 ├── template.py
 └── tox.ini
 ```
+
+# How to use this package
 
 ## Installation
 To install the package, use pip:
