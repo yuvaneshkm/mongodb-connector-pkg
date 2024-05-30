@@ -16,7 +16,7 @@ mongodb-connector-pkg/
 │       └── ci.yaml
 │       └── python-publish.yaml
 ├── src/
-│   └── mdb-connect-pkg/
+│   └── mdb_connect_pkg/
 │       └── mongo_crud.py
 ├── tests/
 │   ├── unit/
