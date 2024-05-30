@@ -10,4 +10,6 @@
 
 ## Installation
 To install the package, use pip:
-```pip install mongodb_connector_pkg```
+```
+pip install mongodb_connector_pkg
+```
