@@ -8,6 +8,32 @@
 * Simple CRUD operations
 * Handling of MongoDB collections
 
+## Directory Structure
+mongodb-connector-pkg/
+├── .github/
+│   └── workflows/
+│       └── ci.yaml
+│       └── python-publish.yaml
+├── src/
+│   └── mdb_connect_pkg/
+│       └── mongo_crud.py
+├── tests/
+│   ├── unit/
+│   │   └── test_unit.py
+│   └── integration/
+│       └── test_integration.py
+├── .gitignore
+├── init_setup.sh
+├── LICENSE
+├── pyproject.toml
+├── README.md
+├── requirements_dev.txt
+├── requirements.txt
+├── setup.cfg
+├── setup.py
+├── template.py
+└── tox.ini
+
 ## Installation
 To install the package, use pip:
 ```
