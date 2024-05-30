@@ -19,16 +19,14 @@ with open('README.md', 'r', encoding='utf-8') as f:
 f.close()
 
 # requirements
-HYPEN_E_DOT='-e .'
-
-def get_requiremet(file_path:str)->List[str]:
-    requirements = []
-    with open(file_path) as f:
-        requirements=f.readlines()
-        requirements=[req.replace("\n","")for req in requirements]
-        
-        if HYPEN_E_DOT in requirements:
-            requirements.remove(HYPEN_E_DOT)
+# function to return list of requirements:
+def get_requirements(requirements_file_path:str):
+    with open(requirements_file_path, 'r') as file:
+        requires = file.read()
+        requirements = requires.split('\n')
+        if '-e .' in requirements:
+            requirements.remove('-e .')
+        file.close()
     return requirements
    
 # setup:
@@ -46,5 +44,5 @@ setup(
     },
     package_dir={"": "src"},
     packages=find_packages(where="src"),
-    install_requires = get_requiremet("./requirements.txt")
+    install_requires = get_requirements("requirements_dev.txt")
     )
