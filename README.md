@@ -9,7 +9,7 @@
 * Handling of MongoDB collections
 
 # Directory Structure
-```css
+```plaintext
 mongodb-connector-pkg/
 ├── .github/
 │   └── workflows/
@@ -39,25 +39,25 @@ mongodb-connector-pkg/
 # How to use this package
 
 ## Installation
-To install the package, use pip
+To install the package, use pip:
 ```bash
 pip install mdb-connect-pkg==0.0.5
 ```
 
 ## Usage
 ### Connecting to MongoDB
-First, import the package and create a connection instance
+First, import the package and create a connection instance:
 ```py
-# Importing the package:
+# Importing the package
 from mdb_connect_pkg import mongo_crud
 
-# Initialize the connector:
+# Initialize the connector
 db_connection_url = 'mongodb://localhost:27017'
 database_name = 'mydatabase'
 collection_name = 'mycollection'
 mongo = mongo_crud.MongoDBConnection(db_connection_url, database_name, collection_name)
 
-# Creating the client and connect to the database:
+# Creating the client and connect to the database
 mongo.create_mongo_client()
 mongo.database_()
 mongo.collection_()
@@ -66,44 +66,44 @@ mongo.collection_()
 ## CRUD Operations
 
 ### Create
-To insert a single record into the collection
+To insert a single record into the collection:
 ```py
 mongo.single_insert({"name": "John Doe", "age": 30, "email": "johndoe@example.com"})
 ```
-To insert a json file into the collection
+To insert a JSON file into the collection:
 ```py
 json_file_path = 'example.json'
 mongo.bulk_insert(json_file_path)
 ```
-To insert a csv file into the collection
+To insert a CSV file into the collection:
 ```py
 csv_file_path = 'example.csv'
 mongo.bulk_insert(csv_file_path)
 ```
 
 ### Read
-To load the data from mongodb database to pandas dataframe
+To load the data from the MongoDB database to a pandas DataFrame:
 ```py
 df = mongo.load_data()
 df.head()
 ```
 
 ### Update
-To update the records in the collection
+To update the records in the collection:
 ```py
-mongo.update_data({you can use mongodb query here to update any records})
+mongo.update_data({"name": "John Doe"},{"$set": {"age": 31}})
 ```
 
 ### Delete
-To delete records in the collection
+To delete records in the collection:
 ```py
-mongo.delete_record({you can use mongodb query here to delete any records})
+mongo.delete_record({"name": "John Doe"})
 ```
-To delete the entire collection
+To delete the entire collection:
 ```py
 mongo.drop_collection()
 ```
-To delete the entire database
+To delete the entire database:
 ```py
 mongo.drop_database()
 ```
@@ -115,7 +115,7 @@ Contributions are welcome! Please open an issue or submit a pull request on GitH
 This project is licensed under the MIT License.
 
 # Contact
-For any questions or suggestions, please contact [Email](yuvaneshkm05@gmail.com)
+For any questions or suggestions, please contact [yuvaneshkm05@gmail.com](yuvaneshkm05@gmail.com)
 
 # Connect
-Connect with me on [Linkedin](https://www.linkedin.com/in/yuvaneshkm)
+Connect with me on [LinkedIn](https://www.linkedin.com/in/yuvaneshkm)
