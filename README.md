@@ -8,3 +8,6 @@
 * Simple CRUD operations
 * Handling of MongoDB collections
 
+## Installation
+To install the package, use pip:
+`pip install mongodb_connector_pkg`

@@ -24,8 +24,12 @@ list_of_files = [
 
     # creating tests folder:
     'tests/__init__.py',
-    'tests/test_unit.py',
-    'tests/test_integration.py',
+    # tests --- unit:
+    'tests/unit/__init__.py',
+    'tests/unit/test_unit.py',
+    # tests --- integration:
+    'tests/integration/__init__.py',
+    'tests/integration/test_integration.py',
 
 
     # setup files:
