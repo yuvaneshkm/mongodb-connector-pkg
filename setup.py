@@ -18,17 +18,18 @@ with open('README.md', 'r', encoding='utf-8') as f:
     long_description = f.read()  
 f.close()
 
-# requirements
-# function to return list of requirements:
-def get_requirements(requirements_file_path:str):
-    with open(requirements_file_path, 'r') as file:
+# requirements:
+def parse_requirements(filename: str):
+    with open(filename, 'r') as file:
         requires = file.read()
         requirements = requires.split('\n')
         if '-e .' in requirements:
             requirements.remove('-e .')
         file.close()
+
     return requirements
-   
+
+
 # setup:
 setup(
     name=PKG_NAME,
@@ -44,5 +45,6 @@ setup(
     },
     package_dir={"": "src"},
     packages=find_packages(where="src"),
-    install_requires = get_requirements("requirements_dev.txt")
+    install_requires = parse_requirements('requirements.txt'),
+    extras_require = {'dev': parse_requirements('requirements_dev.txt')}
     )
