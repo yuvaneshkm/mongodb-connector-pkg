@@ -9,6 +9,7 @@
 * Handling of MongoDB collections
 
 ## Directory Structure
+```
 mongodb-connector-pkg/
 ├── .github/
 │   └── workflows/
@@ -33,6 +34,7 @@ mongodb-connector-pkg/
 ├── setup.py
 ├── template.py
 └── tox.ini
+```
 
 ## Installation
 To install the package, use pip:
