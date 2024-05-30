@@ -9,7 +9,7 @@
 * Handling of MongoDB collections
 
 # Directory Structure
-```
+```css
 mongodb-connector-pkg/
 ├── .github/
 │   └── workflows/
@@ -40,17 +40,14 @@ mongodb-connector-pkg/
 
 ## Installation
 To install the package, use pip
-
-```
-pip install mdb-connect-pkg
+```bash
+pip install mdb-connect-pkg==0.0.4
 ```
 
 ## Usage
-
 ### Connecting to MongoDB
 First, import the package and create a connection instance
-
-```
+```py
 # Importing the package:
 from mdb_connect_pkg import mongo_crud
 # Initialize the connector:
@@ -67,61 +64,45 @@ mongo.collection_()
 ## CRUD Operations
 
 ### Create
-
 To insert a single record into the collection
-
-```
+```py
 mongo.single_insert({"name": "John Doe", "age": 30, "email": "johndoe@example.com"})
 ```
-
 To insert a json file into the collection
-
-```
+```py
 json_file_path = 'example.json'
 mongo.bulk_insert(json_file_path)
 ```
-
 To insert a csv file into the collection
-
-```
+```py
 csv_file_path = 'example.csv'
 mongo.bulk_insert(csv_file_path)
 ```
 
 ### Read
-
 To load the data from mongodb database to pandas dataframe
-
-```
+```py
 df = mongo.load_data()
 df.head()
 ```
 
 ### Update
-
 To update the records in the collection
-
-```
+```py
 mongo.update_data({you can use mongodb query here to update any records})
 ```
 
 ### Delete
-
 To delete records in the collection
-
-```
+```py
 mongo.delete_record({you can use mongodb query here to delete any records})
 ```
-
 To delete the entire collection
-
-```
+```py
 mongo.drop_collection()
 ```
-
 To delete the entire database
-
-```
+```py
 mongo.drop_database()
 ```
 
@@ -136,8 +117,3 @@ For any questions or suggestions, please contact [Email](yuvaneshkm05@gmail.com)
 
 # Connect
 Connect with me on [Linkedin](https://www.linkedin.com/in/yuvaneshkm)
-
-...
-Here is an example of an inline code with proper backticks `example`.
-This should fix the syntax error.
-...
