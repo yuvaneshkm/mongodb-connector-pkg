@@ -104,14 +104,14 @@ To delete the entire database:
 mongo.drop_database()
 ```
 
-## Contributing
+# Contributing
 Contributions are welcome! Please open an issue or submit a pull request on GitHub.
 
-## License
+# License
 This project is licensed under the MIT License.
 
-## Contact
+# Contact
 For any questions or suggestions, please contact [Email](yuvaneshkm05@gmail.com)
 
-## Connect
+# Connect
 Connect with me on [Linkedin](https://www.linkedin.com/in/yuvaneshkm/)
