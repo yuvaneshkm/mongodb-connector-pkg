@@ -37,13 +37,11 @@ mongodb-connector-pkg/
 ```
 
 # How to use this package
-
 ## Installation
 To install the package, use pip:
 ```
 pip install mdb-connect-pkg==0.0.4
 ```
-
 ## Usage
 ### Connecting to MongoDB
 First, import the package and create a connection instance:
@@ -62,7 +60,6 @@ mongo.create_mongo_client()
 mongo.database_()
 mongo.collection_()
 ```
-
 ## CRUD Operations
 ### Create
 To insert a single record into the collection:
