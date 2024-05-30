@@ -136,3 +136,8 @@ For any questions or suggestions, please contact [Email](yuvaneshkm05@gmail.com)
 
 # Connect
 Connect with me on [Linkedin](https://www.linkedin.com/in/yuvaneshkm)
+
+...
+Here is an example of an inline code with proper backticks `example`.
+This should fix the syntax error.
+...
