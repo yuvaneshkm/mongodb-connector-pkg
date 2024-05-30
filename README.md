@@ -34,7 +34,7 @@ mongo.collection_()
 ```
 
 ## CRUD Operations
-### Create
+### * Create
 To insert a single record into the collection:
 ```
 mongo.single_insert({"name": "John Doe", "age": 30, "email": "johndoe@example.com"})
@@ -49,4 +49,4 @@ To insert a csv file into the collection:
 csv_file_path = 'example.csv'
 mongo.bulk_insert(csv_file_path)
 ```
-### Read
+### * Read
