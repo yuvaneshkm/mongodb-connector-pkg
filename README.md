@@ -81,7 +81,7 @@ Contributions are welcome! Please open an issue or submit a pull request on GitH
 This project is licensed under the MIT License.
 
 ## Contact
-For any questions or suggestions, please contact [yuvaneshkm05@gmail.com]
+For any questions or suggestions, please contact [Email](yuvaneshkm05@gmail.com)
 
 ## Connect
 Connect with me on [Linkedin](https://www.linkedin.com/in/yuvaneshkm/)
