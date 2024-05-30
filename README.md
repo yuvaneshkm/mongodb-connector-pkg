@@ -34,7 +34,7 @@ mongo.collection_()
 ```
 
 ## CRUD Operations
-### * Create
+### Create
 To insert a single record into the collection:
 ```
 mongo.single_insert({"name": "John Doe", "age": 30, "email": "johndoe@example.com"})
@@ -49,4 +49,27 @@ To insert a csv file into the collection:
 csv_file_path = 'example.csv'
 mongo.bulk_insert(csv_file_path)
 ```
-### * Read
+### Read
+To load the data from mongodb database to pandas dataframe:
+```
+df = mongo.load_data()
+df.head()
+```
+### Update
+To update the records in the collection:
+```
+mongo.update_data({you can use mongodb query here to update any records})
+```
+### Delete
+To delete records in the collection:
+```
+mongo.delete_record({you can use mongodb query here to delete any records})
+```
+To delete the entire collection:
+```
+mongo.drop_collection()
+```
+To delete the entire database:
+```
+mongo.drop_database()
+```
