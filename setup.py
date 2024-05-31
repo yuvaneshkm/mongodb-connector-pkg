@@ -14,7 +14,7 @@ REPO_NAME = "mongodb-connector-pkg"
 AUTHOR_EMAIL = "yuvaneshkm27@gmail.com"
 
 # long description:
-with open('README.md', 'r', encoding='utf-8') as f:
+with open('README.rst', 'r', encoding='utf-8') as f:
     long_description = f.read()
 f.close()
 

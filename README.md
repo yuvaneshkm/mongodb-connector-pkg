@@ -28,6 +28,7 @@ mongodb-connector-pkg/
 ├── LICENSE
 ├── pyproject.toml
 ├── README.md
+├── README.rst
 ├── requirements_dev.txt
 ├── requirements.txt
 ├── setup.cfg
