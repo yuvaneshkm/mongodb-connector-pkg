@@ -14,9 +14,9 @@ REPO_NAME = "mongodb-connector-pkg"
 AUTHOR_EMAIL = "yuvaneshkm27@gmail.com"
 
 # long description:
-with open('README.rst', 'r', encoding='utf-8') as f:
-    long_description_ = f.read()
-f.close()
+def read_file(filename):
+    with open(filename, 'r', encoding='utf-8') as f:
+        return f.read()
 
 # setup:
 setup(
@@ -25,7 +25,7 @@ setup(
     author=AUTHOR_USER_NAME,
     author_email=AUTHOR_EMAIL,
     description="A python package for connecting with database.",
-    long_description=long_description_,
+    long_description=read_file('README.rst'),
     long_description_content_type="text/x-rst",
     url=f"https://github.com/{AUTHOR_USER_NAME}/{REPO_NAME}",
     project_urls={
