@@ -54,7 +54,7 @@ To install the package, use pip:
 
 .. code-block:: bash
 
-    pip install mdb-connect-pkg==1.0.0
+    pip install mdb-connect-pkg==0.1
 
 Usage
 ~~~~~
