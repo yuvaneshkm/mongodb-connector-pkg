@@ -43,6 +43,8 @@ list_of_files = [
     'pyproject.toml',
     # ini file:
     'tox.ini',
+    # rst file:
+    'README.rst',
     # experiments notebook:
     'experiments/experiments.ipynb'
 
