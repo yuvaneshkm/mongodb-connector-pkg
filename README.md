@@ -42,7 +42,7 @@ mongodb-connector-pkg/
 ## Installation
 To install the package, use pip:
 ```bash
-pip install mdb-connect-pkg==1.1.0
+pip install mdb-connect-pkg==1.1.1
 ```
 
 ## Usage
