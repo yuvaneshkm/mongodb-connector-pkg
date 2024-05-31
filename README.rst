@@ -143,5 +143,25 @@ To delete the entire collection:
 To delete the entire database:
 
 .. code-block:: python
-    
+
     mongo.drop_database()
+
+Contributing
+------------
+
+Contributions are welcome! Please open an issue or submit a pull request on GitHub.
+
+License
+-------
+
+This project is licensed under the MIT License.
+
+Contact
+-------
+
+For any questions or suggestions, please contact `yuvaneshkm05@gmail.com <mailto:yuvaneshkm05@gmail.com>`_
+
+Connect
+-------
+
+Connect with me on `LinkedIn <https://www.linkedin.com/in/yuvaneshkm>`_
