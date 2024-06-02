@@ -88,7 +88,7 @@ In summary, setup.cfg is used by setuptools to configure the packaging and insta
 ## CI/CD
  Implemented a robust CI/CD pipeline using GitHub Actions to automate testing, building, and deployment of this package to the PyPI repository. This ensures that every change is thoroughly tested and seamlessly deployed, maintaining the highest quality standards.
 
-# How to use this package
+# How to use this package?
 
 ## Installation
 To install the package, use pip:
